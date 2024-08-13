@@ -31,6 +31,7 @@ Luego, se te pedirá que ingreses la cadena de entrada que deseas procesar con e
 
 
 Ingrese la cadena de entrada: abba  (rechazada en ejemplo inicial)
+Ingrese la cadena de entrada: ab (aceptada en el ejemplo)
 El programa procesará la cadena de entrada y te dirá si fue aceptada o rechazada por el AFD.
 
 Formato del Archivo de Configuración
@@ -43,6 +44,7 @@ Estados de aceptación: Una línea con los nombres de los estados de aceptación
 Transiciones: Cada línea subsiguiente representa una transición en el formato estado_actual,símbolo,estado_siguiente.
 Ejemplo del contenido de config.txt:
 
+```txt
 q0,q1,q2
 a,b
 q0
