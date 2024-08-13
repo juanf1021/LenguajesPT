@@ -13,15 +13,16 @@ Instrucciones de Uso
 Paso 1: Compilación
 Primero, debes compilar el programa. Si estás en un entorno Unix/Linux o en una terminal compatible con GCC, puedes hacerlo con el siguiente comando:
 
+```txt
 gcc -o proyect proyect.c
-
+```
 Este comando generará un ejecutable llamado proyect.
 
 Paso 2: Ejecutar el Programa
 Una vez compilado, puedes ejecutar el programa desde la terminal con el siguiente comando:
-
+```txt
 ./proyect
-
+```
 Paso 3: Probar con un Archivo de Configuración
 Cuando ejecutes el programa, se te pedirá que ingreses el nombre del archivo de configuración. Para probar el programa con el archivo de configuración incluido en este repositorio, ingresa el siguiente nombre cuando se te solicite:
 
