@@ -44,10 +44,8 @@ Para compilar y ejecutar un archivo LEX, sigue estos pasos:
    Para ejecutar el programa, simplemente utiliza:
 
    ```bash
-   ./programa1 < entrada.txt
+   ./a.out
    ```
-
-   Donde `entrada.txt` es el archivo que deseas procesar.
 
 ### Ejecución de los Programas
 
@@ -56,29 +54,29 @@ A continuación, se muestra cómo ejecutar cada uno de los programas mencionados
 1. **Programa 1: Contar líneas, palabras y caracteres**:
 
    ```bash
-   ./programa1 < archivo_de_texto.txt
+   ./a.out 
    ```
 
 2. **Programa 2: Traductor de inglés a español**:
 
    ```bash
-   ./programa2 < archivo_ingles.txt
+   ./a.out
    ```
 
 3. **Programa 3: Reconocimiento de símbolos y caracteres de la calculadora**:
 
    ```bash
-   ./programa3 < expresion_calculadora.txt
+   ./a.out
    ```
 
 4. **Programa 4: Reconocimiento de tokens**:
 
    ```bash
-   ./programa4 < entrada_tokens.txt
+   ./a.out
    ```
 
 5. **Programa 5: Clasificación de números complejos**:
 
    ```bash
-   ./programa5 < numeros_complejos.txt
+   ./a.out
    ```
