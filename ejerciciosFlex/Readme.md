@@ -1,3 +1,5 @@
+#Trabajo de Juan Hurtado, Andres Castro, Miguel Flechas, Juan Trujillo
+
 # Programas en LEX
 
 Este repositorio contiene cinco programas escritos en LEX, implementados y probados en Kali Linux. Los programas son:
