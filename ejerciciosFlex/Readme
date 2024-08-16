@@ -1,0 +1,84 @@
+# Programas en LEX
+
+Este repositorio contiene cinco programas escritos en LEX, implementados y probados en Kali Linux. Los programas son:
+
+1. **Contar líneas, palabras y caracteres**: Cuenta el número de líneas, palabras y caracteres en un archivo de texto.
+2. **Traductor de inglés a español**: Traduce palabras clave del inglés al español.
+3. **Reconocimiento de símbolos y caracteres de la calculadora**: Reconoce números, símbolos y caracteres utilizados en una calculadora.
+4. **Reconocimiento de tokens**: Reconoce tokens específicos como `NUMBER`, `ADD`, `SUB`, `MUL`, `DIV`, `ABS` y `EOL`.
+5. **Clasificación de números complejos**: Clasifica números como reales, imaginarios o complejos.
+
+## Requisitos Previos
+
+Para ejecutar estos programas, necesitas tener LEX instalado en tu sistema. Aquí te mostramos cómo instalarlo y utilizarlo en Kali Linux.
+
+### Instalación de LEX en Kali Linux
+
+Si aún no tienes LEX instalado, puedes hacerlo con el siguiente comando:
+
+```bash
+sudo apt-get install flex
+```
+
+### Compilación y Ejecución de un Archivo LEX
+
+Para compilar y ejecutar un archivo LEX, sigue estos pasos:
+
+1. **Compila el archivo LEX**:  
+   Supongamos que tienes un archivo llamado `programa1.l`, compílalo con:
+
+   ```bash
+   flex programa1.l
+   ```
+
+2. **Compila el código generado**:  
+   Flex generará un archivo `lex.yy.c`. Compílalo con:
+
+   ```bash
+   gcc lex.yy.c -o programa1 -lfl
+   ```
+
+   El nombre del ejecutable será `programa1`.
+
+3. **Ejecuta el programa**:  
+   Para ejecutar el programa, simplemente utiliza:
+
+   ```bash
+   ./programa1 < entrada.txt
+   ```
+
+   Donde `entrada.txt` es el archivo que deseas procesar.
+
+### Ejecución de los Programas
+
+A continuación, se muestra cómo ejecutar cada uno de los programas mencionados:
+
+1. **Programa 1: Contar líneas, palabras y caracteres**:
+
+   ```bash
+   ./programa1 < archivo_de_texto.txt
+   ```
+
+2. **Programa 2: Traductor de inglés a español**:
+
+   ```bash
+   ./programa2 < archivo_ingles.txt
+   ```
+
+3. **Programa 3: Reconocimiento de símbolos y caracteres de la calculadora**:
+
+   ```bash
+   ./programa3 < expresion_calculadora.txt
+   ```
+
+4. **Programa 4: Reconocimiento de tokens**:
+
+   ```bash
+   ./programa4 < entrada_tokens.txt
+   ```
+
+5. **Programa 5: Clasificación de números complejos**:
+
+   ```bash
+   ./programa5 < numeros_complejos.txt
+   ```
