@@ -1,4 +1,4 @@
-#Trabajo de Juan Hurtado, Andres Castro, Miguel Flechas, Juan Trujillo
+# Trabajo de Juan Hurtado, Andres Castro, Miguel Flechas, Juan Trujillo
 
 # Programas en LEX
 
