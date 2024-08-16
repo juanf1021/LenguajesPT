@@ -28,20 +28,20 @@ Para compilar y ejecutar un archivo LEX, sigue estos pasos:
    Supongamos que tienes un archivo llamado `programa1.l`, compílalo con:
 
    ```bash
-   flex programa1.l
+   lex programa1.l
    ```
 
 2. **Compila el código generado**:  
    Flex generará un archivo `lex.yy.c`. Compílalo con:
 
    ```bash
-   gcc lex.yy.c -o programa1 -lfl
+   gcc lex.yy.c -lfl
    ```
 
-   El nombre del ejecutable será `programa1`.
+   Esto generará un archivo ejecutable llamado `a.out`.
 
 3. **Ejecuta el programa**:  
-   Para ejecutar el programa, simplemente utiliza:
+   Para ejecutar el programa, asegúrate de estar en la carpeta donde se encuentra `a.out` y utiliza el siguiente comando:
 
    ```bash
    ./a.out
@@ -54,7 +54,7 @@ A continuación, se muestra cómo ejecutar cada uno de los programas mencionados
 1. **Programa 1: Contar líneas, palabras y caracteres**:
 
    ```bash
-   ./a.out 
+   ./a.out
    ```
 
 2. **Programa 2: Traductor de inglés a español**:
