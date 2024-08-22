@@ -1,4 +1,4 @@
-####Andres Castro, Miguel Flechas, Juan Hurtado, Juan Trujillo
+#### Andres Castro, Miguel Flechas, Juan Hurtado, Juan Trujillo
 Este programa implementa una calculadora simple utilizando herramientas de generación de analizadores léxicos y sintácticos: **Flex** y **Bison**. La calculadora permite realizar operaciones básicas como suma, resta, multiplicación, división y cálculo del valor absoluto sobre números enteros. Además, el programa maneja errores como la división por cero.
 
 #### Archivos del Proyecto
