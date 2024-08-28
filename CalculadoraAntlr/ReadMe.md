@@ -8,6 +8,7 @@ A continuación, se detallan los pasos necesarios para instalar ANTLR, configura
 #### Descargar ANTLR
 
 Primero, necesitas descargar el archivo JAR de ANTLR. Puedes hacerlo usando curl o directamente desde el sitio web de ANTLR.
+```
 
 ```bash
 curl -O https://www.antlr.org/download/antlr-4.13.2-complete.jar
