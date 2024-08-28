@@ -1,37 +1,45 @@
 %{
 #include <stdio.h>
+#include <stdlib.h>
 int yylex(void);
 void yyerror(const char *s);
 %}
 
-%token NUMBER
+%union {
+    double dval;
+}
+
+%token <dval> NUMBER
 %token ADD SUB MUL DIV ABS
 %token EOL
+
+%type <dval> exp factor term
 
 %%
 
 calclist:
-| calclist exp EOL { printf("= %d\n", $2); }
+    /* Lista de cálculos, permite múltiples líneas de entrada */
+    | calclist exp EOL { printf("= %f\n", $2); }
 ;
 
 exp: factor
-| exp ADD factor { $$ = $1 + $3; }
-| exp SUB factor { $$ = $1 - $3; }
+    | exp ADD factor { $$ = $1 + $3; }
+    | exp SUB factor { $$ = $1 - $3; }
 ;
 
 factor: term
-| factor MUL term { $$ = $1 * $3; }
-| factor DIV term {
-    if ($3 == 0)
-        yyerror("division by zero");
-    else
-        $$ = $1 / $3;
-}
+    | factor MUL term { $$ = $1 * $3; }
+    | factor DIV term {
+        if ($3 == 0)
+            yyerror("division by zero");
+        else
+            $$ = $1 / $3;
+    }
 ;
 
-term: NUMBER
-| ABS term { $$ = $2 >= 0 ? $2 : -$2; }
-;
+term: NUMBER 
+     | ABS term { $$ = $2 >= 0 ? $2 : -$2; }
+     ;
 
 %%
 
@@ -45,3 +53,4 @@ void yyerror(const char *s)
 {
     fprintf(stderr, "error: %s\n", s);
 }
+

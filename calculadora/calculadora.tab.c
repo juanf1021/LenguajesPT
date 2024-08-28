@@ -70,10 +70,11 @@
 #line 1 "calculadora.y"
 
 #include <stdio.h>
+#include <stdlib.h>
 int yylex(void);
 void yyerror(const char *s);
 
-#line 77 "calculadora.tab.c"
+#line 78 "calculadora.tab.c"
 
 # ifndef YY_CAST
 #  ifdef __cplusplus
@@ -502,8 +503,8 @@ static const yytype_int8 yytranslate[] =
 /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_int8 yyrline[] =
 {
-       0,    13,    13,    14,    17,    18,    19,    22,    23,    24,
-      32,    33
+       0,    20,    20,    22,    25,    26,    27,    30,    31,    32,
+      40,    41
 };
 #endif
 
@@ -1068,48 +1069,48 @@ yyreduce:
   switch (yyn)
     {
   case 3: /* calclist: calclist exp EOL  */
-#line 14 "calculadora.y"
-                   { printf("= %d\n", yyvsp[-1]); }
-#line 1074 "calculadora.tab.c"
+#line 22 "calculadora.y"
+                       { printf("= %f\n", (yyvsp[-1].dval)); }
+#line 1075 "calculadora.tab.c"
     break;
 
   case 5: /* exp: exp ADD factor  */
-#line 18 "calculadora.y"
-                 { yyval = yyvsp[-2] + yyvsp[0]; }
-#line 1080 "calculadora.tab.c"
+#line 26 "calculadora.y"
+                     { (yyval.dval) = (yyvsp[-2].dval) + (yyvsp[0].dval); }
+#line 1081 "calculadora.tab.c"
     break;
 
   case 6: /* exp: exp SUB factor  */
-#line 19 "calculadora.y"
-                 { yyval = yyvsp[-2] - yyvsp[0]; }
-#line 1086 "calculadora.tab.c"
+#line 27 "calculadora.y"
+                     { (yyval.dval) = (yyvsp[-2].dval) - (yyvsp[0].dval); }
+#line 1087 "calculadora.tab.c"
     break;
 
   case 8: /* factor: factor MUL term  */
-#line 23 "calculadora.y"
-                  { yyval = yyvsp[-2] * yyvsp[0]; }
-#line 1092 "calculadora.tab.c"
+#line 31 "calculadora.y"
+                      { (yyval.dval) = (yyvsp[-2].dval) * (yyvsp[0].dval); }
+#line 1093 "calculadora.tab.c"
     break;
 
   case 9: /* factor: factor DIV term  */
-#line 24 "calculadora.y"
-                  {
-    if (yyvsp[0] == 0)
-        yyerror("division by zero");
-    else
-        yyval = yyvsp[-2] / yyvsp[0];
-}
-#line 1103 "calculadora.tab.c"
+#line 32 "calculadora.y"
+                      {
+        if ((yyvsp[0].dval) == 0)
+            yyerror("division by zero");
+        else
+            (yyval.dval) = (yyvsp[-2].dval) / (yyvsp[0].dval);
+    }
+#line 1104 "calculadora.tab.c"
     break;
 
   case 11: /* term: ABS term  */
-#line 33 "calculadora.y"
-           { yyval = yyvsp[0] >= 0 ? yyvsp[0] : -yyvsp[0]; }
-#line 1109 "calculadora.tab.c"
+#line 41 "calculadora.y"
+                { (yyval.dval) = (yyvsp[0].dval) >= 0 ? (yyvsp[0].dval) : -(yyvsp[0].dval); }
+#line 1110 "calculadora.tab.c"
     break;
 
 
-#line 1113 "calculadora.tab.c"
+#line 1114 "calculadora.tab.c"
 
       default: break;
     }
@@ -1302,7 +1303,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 36 "calculadora.y"
+#line 44 "calculadora.y"
 
 
 int main(int argc, char **argv)
@@ -1315,3 +1316,4 @@ void yyerror(const char *s)
 {
     fprintf(stderr, "error: %s\n", s);
 }
+
