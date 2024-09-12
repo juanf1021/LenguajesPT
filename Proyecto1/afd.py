@@ -67,7 +67,11 @@ PALABRAS_RESERVADAS = {
     'with': 'with',
     'yield': 'yield',
     'print': 'print',
-    'range': 'range'
+    'range': 'range',
+    'match':'match',
+    'case':'case',
+    'type':'type',
+    '_':'_'
 }
 
 SIMBOLOS_ESPECIALES = {
