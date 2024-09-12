@@ -59,6 +59,7 @@ PALABRAS_RESERVADAS = {
     'not': 'not',
     'or': 'or',
     'pass': 'pass',
+    'mft' : 'mft',
     'raise': 'raise',
     'return': 'return',
     'try': 'try',
