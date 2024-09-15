@@ -1,3 +1,4 @@
+Juan Hurtado, Miguel Flechas, Andrés Castro, Juan Trujillo
 ```markdown
 # Analizador Léxico en Python
 
