@@ -1,0 +1,45 @@
+Longitud de la cadena, Tiempo de ejecución (segundos)
+==============================================
+Longitud de la cadena: 1, Tiempo de ejecución: 0.000010 segundos
+Longitud de la cadena: 2, Tiempo de ejecución: 0.000011 segundos
+Longitud de la cadena: 3, Tiempo de ejecución: 0.000015 segundos
+Longitud de la cadena: 4, Tiempo de ejecución: 0.000026 segundos
+Longitud de la cadena: 5, Tiempo de ejecución: 0.000048 segundos
+Longitud de la cadena: 6, Tiempo de ejecución: 0.000074 segundos
+Longitud de la cadena: 7, Tiempo de ejecución: 0.000110 segundos
+Longitud de la cadena: 8, Tiempo de ejecución: 0.000163 segundos
+Longitud de la cadena: 9, Tiempo de ejecución: 0.000278 segundos
+Longitud de la cadena: 10, Tiempo de ejecución: 0.000309 segundos
+Longitud de la cadena: 11, Tiempo de ejecución: 0.000401 segundos
+Longitud de la cadena: 12, Tiempo de ejecución: 0.000525 segundos
+Longitud de la cadena: 13, Tiempo de ejecución: 0.000787 segundos
+Longitud de la cadena: 14, Tiempo de ejecución: 0.000886 segundos
+Longitud de la cadena: 15, Tiempo de ejecución: 0.001053 segundos
+Longitud de la cadena: 16, Tiempo de ejecución: 0.001326 segundos
+Longitud de la cadena: 17, Tiempo de ejecución: 0.001680 segundos
+Longitud de la cadena: 18, Tiempo de ejecución: 0.001856 segundos
+Longitud de la cadena: 19, Tiempo de ejecución: 0.002065 segundos
+Longitud de la cadena: 20, Tiempo de ejecución: 0.002711 segundos
+==============================================
+Tabla de tiempos de ejecución:
+Longitud	Tiempo (segundos)
+1		0.000010
+2		0.000011
+3		0.000015
+4		0.000026
+5		0.000048
+6		0.000074
+7		0.000110
+8		0.000163
+9		0.000278
+10		0.000309
+11		0.000401
+12		0.000525
+13		0.000787
+14		0.000886
+15		0.001053
+16		0.001326
+17		0.001680
+18		0.001856
+19		0.002065
+20		0.002711
