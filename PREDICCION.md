@@ -1,3 +1,5 @@
+Juan Hurtado, Miguel Flechas, Andres Castro, Juan Trujillo
+
 ```markdown
 # Procesador de Gramáticas Libre de Contexto
 
