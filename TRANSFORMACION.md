@@ -1,3 +1,5 @@
+Juan Hurtado, Miguel Flechas, Andres Castro, Juan Trujillo
+
 ```markdown
 # Transformación de Gramáticas a LL(1)
 
